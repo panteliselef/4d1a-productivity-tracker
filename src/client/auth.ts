@@ -1,8 +1,4 @@
-import Clerk from '@clerk/clerk-js';
-
-const clerk = new Clerk(import.meta.env.PUBLIC_CLERK_PUBLISHABLE_KEY);
-
-console.log('?');
+import { clerkJSInstance as clerk } from "../astro-clerk/client";
 
 await clerk.load();
 
